@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Sign up!</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="left-container">
-            <img src="img/wise-owl-logo.svg" alt="wise owl the website logo">
-            <img src="img/sign-in.svg" alt="sign in concept art">
+      <div class="left-container">
+        <img
+          class="logo"
+          src="img/wise-owl-logo.svg"
+          alt="wise owl the website logo"
+        />
+        <img class="bg-img" src="img/sign-in.svg" alt="sign in concept art" />
+      </div>
+      <div class="right-container">
+        <div class="title">
+          <h1>Create an account</h1>
+          <p>sign up and connect to the world!</p>
         </div>
-        <div class="right-container">
-            <form action="" method="post">
-                <h1>Create an account</h1>
-                <p>sign up and connect to the world!</p>
-                
-                <label>FIRST NAME<input type="text"></label>
-                <label>EMAIL<input type="text"></label>
-                <label>LAST NAME<input type="text"></label>
-                <label>PHONE NUMBER<input type="text"></label>
-                <label>PASSWORD<input type="text"></label>
-                <label>CONFIRM PASSWORD<input type="text"></label>
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="http://">Log in</a></p>
-            </form>
-        </div>
-    </div>    
-</body>
+        <form action="" method="post">
+          <div class="personal-info card">
+            <label for="first_name"
+              >FIRST NAME<input
+                type="text"
+                id="first_name"
+                name="first_name"
+                required
+            /></label>
+            <label for="last_name"
+              >LAST NAME<input
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+            /></label>
+          </div>
+          <div class="contact card">
+            <label for="email"
+              >EMAIL<input type="email" id="email" name="email" required
+            /></label>
+            <label for="phone"
+              >PHONE NUMBER<input type="tel" id="phone" name="phone_number"
+            /></label>
+          </div>
+          <div class="pass card">
+            <label for="pwd"
+              >PASSWORD<input type="password" id="pwd" name="password" required
+            /></label>
+            <label for="pwd_conf"
+              >CONFIRM PASSWORD<input type="password" id="pwd_conf" required
+            /></label>
+          </div>
+          <div class="submit card">
+            <button type="submit">Create Account</button>
+          </div>
+          <p>Already have an account? <a href="http://">Log in</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
